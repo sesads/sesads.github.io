@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-125818103-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'UA-125818103-1');
+        </script>
+
         <meta http-equiv="Content-Type" content="text/html" charset="utf-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"> 
         <meta charset="utf-8">
@@ -11,9 +21,9 @@
         <!-- Website Description-->
         <meta name="description" content="Serene~Sparkles">
         <meta name="author" content="Ojo Philemon">
-        <link rel="icon" href="assets/icons/favicon.ico">
+        <link rel="icon" href="favicon.png">
         <title>SES-ads</title>
-        <!--------------------------------->
+        <!--++++++++++++++++++++++++++++++++++++++-->
         
         <!-- Core Frameworks -->
         <link rel="stylesheet" href="assets/bootstrap.css"> <!-- Bootstrap -->
@@ -21,6 +31,7 @@
         <!-- Custom CSS & fonts -->    
         <link rel="stylesheet" href="assets/device-mockups.css"><!-- Plugin CSS -->
         <link rel="stylesheet" href="assets/style0.css"/><!-- custom CSS -->
+        <link rel="stylesheet" href="modal.css"/><!-- custom CSS -->
         
         <link rel="stylesheet" href="assets/font-awesome.css">
         <link rel="stylesheet" href="assets/simple-line-icons.css">
@@ -42,35 +53,106 @@
                     Menu
                     <i class="fa fa-bars"></i>
                 </button>
-                    <div class="collapse navbar-collapse" id="navbarResponsive">
-                        <ul class="navbar-nav ml-auto">
-                            <li class="nav-item">
-                                 <a class="nav-link js-scroll-trigger" href="#recent">Recent</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#most-visited">Most Visited</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <hr>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                                <a class="nav-link js-scroll-trigger" href="#recent">New Content</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#most-visited">Most Visited</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-        
+         
         <header class="masthead">
             <div class="container h-100">
                 <div class="row h-100">
+                    <div class="col-lg-7 my-auto">
                     <div class="header-content mx-auto">
-                        <div style="text-align: center;"><br/><br/><br/><br/><br/><br/>
-                         ...   ...<br/>....<br/>...   ...<br/>
-                         <h1 class="mb-5">Advertise Your Business, Events and Entreprise with us</h1>
-                         <h2 class="mb-1">Contact (+234)0808 348 7711 via whatsapp For more info about placing your advert on our site</h2>
-                            <a href="#" class="btn btn-outline btn-xl js-scroll-trigger">Learn more</a>
-                            <br/><br/>
-                            <a href="#" class="btn btn-outline btn-xl js-scroll-trigger">Contact Us</a>
+                        <div style="text-align: center;"><br/><br/>
+                            ...   ...<br/>....<br/>...   ...<br/>
+                            <h1 class="mb-5">Advertise your Apps, Business, Events, Enterprise, Anything...</h1>
+ 
+                            <div data-toggle="modal" data-target="#learn-modal">
+                                <a class="btn btn-outline btn-xl js-scroll-trigger">Learn more</a>
+                            </div>
+                            <div id="learn-modal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <!-- Header -->
+                                        <div class="modal-header">
+                                            <h2 class="modal-title">What we do.</h2>
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                        </div>
+                                        <!-- Body -->
+                                        <div class="modal-body">
+                                            <p class="lead">We bring to world to you and what you have to offer. And vise-versa.</p>
+                                            <p class="lead">More importantly,</p>
+                                                <p style="color:green;">We make it easier for your potential costumers and clients to locate you anywhere</p>
+                                            </p>
+                                        </div>
+                                        <!-- Footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                            data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                    </div>
+                    </div>
+                    <!--++++++++++ right side section of  head nav +++ -->
+                    <div class="col-lg-4 my-auto">
+                        <div class="header-content mx-auto">
+                        <div style="text-align: center;"><br/><br/><br/><br/>
+                            ...   ...<br/>....<br/>...   ...<br/>
+                            <h2 class="mb-0">Contact us to put your advert on this site</h2>
+                            ...   ...<br/>....<br/>...   ...<br/>
+                            <br/>
+
+                            <div data-toggle="modal" data-target="#contact-modal">
+                                <a class="btn btn-outline btn-xl js-scroll-trigger">Contact Us</a>
+                            </div>
+                            <div id="contact-modal" class="modal fade" role="dialog">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <!-- Header -->
+                                        <div class="modal-header">
+                                            <h2 class="modal-title">How To Advertise</h2>
+                                            <button type="button" class="close" data-dismiss="modal">×</button>
+                                        </div>
+                                        <!-- Body -->
+                                        <div class="modal-body">
+                                            <p class="lead" style="color:green">Make it easer for your potential costumers and clients to locate you</p>
+                                            <p class="lead">Send us nice and inviting photos/images of your establishment and other revelant information that 
+                                                you have available such as: a telephone number they can reach you on (whatsapp number also)
+                                                your email address or even a download link.
+
+                                                <br/>A share link leading to your advert content on the site will be provided to you, which you can share on various platforms including whatsapp
+                                            <ul>
+                                                Forward your relevent info available to:
+                                                <li>Mobile: (+234)817-524-4888 </li> 
+                                                <li>Whatsapp only: (+234)808-348-7711</li>
+                                                <li>Email: philebaba47@outlook.com</li>
+                                            </ul>
+                                            Terms and Conditions Apply
+                                            </p>
+                                        </div>
+                                        <!-- Footer -->
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-default"
+                                            data-dismiss="modal">Close</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
                     </div>
                 </div>
             </div>
@@ -109,9 +191,14 @@
         
         <footer>
             <div class="container">
-                &copy; Copyright serenesparkles.online 2018. All Rights Reserved.
+                &copy; Copyright SES 2018. All Rights Reserved.
             </div>
         </footer>
+
+        <a href="#page-top" class="to-top-btn js-scroll-trigger" style="display: inline;">
+            <i class="fa fa-arrow-circle-up" alt="back-to-top"></i>
+            Go to top
+        </a>
         
         
         <!-- Bootstrap JavaScript -->
