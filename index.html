@@ -21,7 +21,7 @@
         <!-- Website Description-->
         <meta name="description" content="Serene~Sparkles">
         <meta name="author" content="Ojo Philemon">
-        <link rel="icon" href="test.png">
+        <link rel="icon" href="favicon.png">
         <title>SES-ads</title>
         <!--++++++++++++++++++++++++++++++++++++++-->
         
@@ -75,7 +75,7 @@
                     <div class="header-content mx-auto">
                         <div style="text-align: center;"><br/><br/>
                             <!-- ...   ...<br/>....<br/>...   ...<br/> -->
-                            <img class="logo" src="test.png" style="width:150px" height="150px" alt="SES-Icon" />
+                            <img class="logo" src="seslogo.png" style="width:150px" height="150px" alt="SES-Icon" />
                             <h1 class="mb-5">Advertise <span class="typed"></span></h1>
                             <!--...   ...<br/>....<br/>...   ...<br/>
                             <h1 class="mb-5">Advertise your Apps, Business, Events, Enterprise, Anything...</h1> -->
@@ -175,6 +175,17 @@
             <gcse:search></gcse:search>
         </div>
         <!-- ++++++++++++++Google custom search bar +++++ -->
+
+        <script>
+        $(document).ready(function() {
+            Hammer(myCarousel).on("swipeleft", function(){
+              $(this).carousel('next');
+            });
+            Hammer(myCarousel).on("swiperight", function(){
+              $(this).carousel('prev');
+            });
+          });   
+        </script>
 
         <section class="ctc" id="recent">
             <div id="one-view-slide" class="carousel slide" data-ride="carousel">
@@ -282,10 +293,9 @@
         </footer>
 
         <a href="#page-top" class="to-top-btn js-scroll-trigger" style="display: inline;">
-            Go to top
+            ↑
         </a>
-        
-        
+               
         <!-- Bootstrap JavaScript -->
         <script src="assets/jquery.js"></script>
         <script src="assets/bootstrap.js"></script>
@@ -296,6 +306,7 @@
         <!-- Custom JavaScript -->
         <script src="assets/custom.js"></script>
         <script src="typing-anim.js"></script>
+        <script src="Hammer.js"></script>
 
         <!-- Go to www.addthis.com/dashboard to customize your tools -->
         <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b9e8c9a463c0758"></script>
