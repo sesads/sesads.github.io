@@ -8,7 +8,7 @@ $(document).ready(function() {
   var typed = $(".typed");
   $(function() {
     typed.typed({
-      strings: ["your Apps.", "your Business.", "Events.", "your Enterprise.", "Anything..."],
+      strings: ["your Apps", "your Business", "Events", "your Enterprise", "Anything..."],
       typeSpeed: 100,
       loop: true,
     });
