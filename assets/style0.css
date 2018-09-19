@@ -211,3 +211,14 @@ div.featurette-divider {
     background-color: #DDF;
     color: #000;
 }
+.italize {
+    font-style: italic;
+    color: #fff;
+    margin: 0;
+}
+.small-icon {
+    width:20px; height: 20px;
+}
+.small-icon-white {
+    width:20px; height: 20px; filter: invert(100%);
+}
