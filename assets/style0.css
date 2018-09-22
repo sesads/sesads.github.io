@@ -223,7 +223,7 @@ div.featurette-divider {
 img.small-icon {
     widows: 20px !important; height: 20px !important;
 }
-.small-icon-white {
+img.small-icon-white {
     width:20px; height: 20px; filter: invert(100%);
 }
 
