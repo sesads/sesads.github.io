@@ -227,7 +227,7 @@ div.featurette-divider {
     width:20px; height: 20px; filter: invert(100%);
 }
 .client .col-left.even {
-    width: 65%;
+    width: 60%;
     float: left;
     text-align: right;
 }
@@ -285,7 +285,7 @@ article.client {
     height: 100%;
 }
 .col-left .container, .col-right .container {
-    padding: 40px 25px;
+    padding: 25px 25px;
 }
 #clients h2 {
     letter-spacing: 15px;
@@ -297,7 +297,7 @@ article.client {
 }
 img.sponsored-logo {
     width: 100%;
-    height: 300px;
+    height: 400px;
     object-fit: contain;
     object-position: center;
 }
