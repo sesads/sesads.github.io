@@ -296,7 +296,8 @@ article.client {
     text-align: center;
 }
 img.sponsored-logo {
-    transition: all .3s;
+    width: 100%;
+    height: 300px;
     object-fit: contain;
     object-position: center;
 }
