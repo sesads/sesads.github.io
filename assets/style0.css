@@ -262,3 +262,8 @@ div.center {
 img {
     max-width: 100%;
 }
+.sponsored {
+    display: inline;
+    text-align: center;
+    margin: 0 auto;
+}
