@@ -298,6 +298,9 @@ img.sponsored-logo {
 .headline-container h2 {
     font-size: 4em;
     text-align: center;
+    color: #fff;
+    font-family: cursive;
+    font-weight:bolder
 }
 div.center {
     display: table-cell;
