@@ -128,6 +128,7 @@ $('.ml13').each(function(){
   });
   /* Online Millionaires Animation End */
 
+  /* Blessing Shoes Animation Start */
   // Wrap every letter in a span
 $('.ml6 .letters').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
@@ -149,11 +150,11 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+/* Blessing Shoes Animation End */
 
 
-
-
-  var ml4 = {};
+/*************ml4***********/
+var ml4 = {};
 ml4.opacityIn = [0,1];
 ml4.scaleIn = [0.2, 1];
 ml4.scaleOut = 3;
@@ -204,10 +205,10 @@ anime.timeline({loop: true})
     duration: 500,
     delay: 500
   });
+/*****************ml4*************/
 
 
-
-
+/* Bernard Victor Animation Start */
   // Wrap every letter in a span
 $('.ml3').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
@@ -229,8 +230,10 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+/* Bernard Victor Animation End */
 
 
+/* MADE.WITH.LOVE Animation Start */
   // Wrap every letter in a span
 $('.ml16').each(function(){
   $(this).html($(this).text().replace(/([^\x00-\x80]|\w)/g, "<span class='letter'>$&</span>"));
@@ -252,3 +255,4 @@ anime.timeline({loop: true})
     easing: "easeOutExpo",
     delay: 1000
   });
+  /* MADE.WITH.LOVE Animation End */

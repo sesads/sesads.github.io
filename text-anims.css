@@ -89,6 +89,7 @@
   }
   /* Online Millionaires Animation Ends*/
 
+  /* Blessing Shoes Animation Start */
   .ml6 {
     position: relative;
     font-weight: 900;
@@ -108,8 +109,9 @@
     display: inline-block;
     line-height: 1em;
   }
+  /* Blessing Shoes Animation End */
 
-
+ /*************ml4***********/
   .ml4 {
     position: relative;
     font-weight: 900;
@@ -123,13 +125,17 @@
     right: 0;
     opacity: 0; 
   }
+  /*****************ml4*************/
 
+  /* Bernard Victor Animation Start */
   .ml3 {
     font-weight: 900;
     font-size: 3.5em;
   }
+/* Bernard Victor Animation End */
 
 
+/* MADE.WITH.LOVE Animation Start */
   .ml16 {
     color: cornflowerblue/*#402d2d*/;
     /*padding: 40px 0;*/
@@ -145,3 +151,4 @@
     display: inline-block;
     line-height: 1em;
   }
+  /* MADE.WITH.LOVE Animation End */
