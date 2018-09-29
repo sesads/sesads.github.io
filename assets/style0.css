@@ -319,3 +319,16 @@ img {
     -webkit-background-clip:text;
     -webkit-text-fill-color:transparent
 }
+
+.fa-bars {
+    position: relative;
+}
+.fa-bars:before {
+    content: "\f0ca";
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+
+    color: #000;
+}
