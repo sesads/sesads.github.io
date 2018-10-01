@@ -152,3 +152,24 @@
     line-height: 1em;
   }
   /* MADE.WITH.LOVE Animation End */
+
+  /* Seasons Greetings Animation (X-mas 2018) Start*/
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: #555;
+    user-select: none;
+    z-index: 1000;
+}
+.snowflake:hover {
+    cursor: default;
+}
+  /* Seasons Greetings Animation (X-mas 2018) Stop*/

@@ -309,16 +309,6 @@ div.center {
 img {
     max-width: 100%;
 }
-.div-after-two {
-    /*background: -webkit-linear-gradient(to left,#222,#255);
-    background: linear-gradient(to left,#222,#255);
-    background-position: center;*/
-
-    background:-webkit-linear-gradient(to left,#7b4397,#dc2430) !important;
-    background:linear-gradient(to left,#7b4397,#dc2430) !important;
-    -webkit-background-clip:text;
-    -webkit-text-fill-color:transparent
-}
 
 .fa-bars {
     position: relative;
