@@ -162,8 +162,8 @@
 .snowflake {
     padding-left: 15px;
     font-family: Cambria, Georgia, serif;
-    font-size: 14px;
-    line-height: 24px;
+    /*font-size: 14px;
+    line-height: 24px;*/
     position: fixed;
     color: #555;
     user-select: none;
