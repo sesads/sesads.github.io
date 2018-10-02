@@ -141,6 +141,7 @@ function generateSnowflakes() {
 //
 // Responsible for moving each snowflake by calling its update function
 //
+
 function moveSnowflakes() {
     for (var i = 0; i < snowflakes.length; i++) {
         var snowflake = snowflakes[i];
@@ -162,7 +163,7 @@ function moveSnowflakes() {
 	    resetPosition = false;
     }
     
-    requestAnimationFrame(moveSnowflakes);
+    /*requestAnimationFrame(moveSnowflakes);*/
 }
 
 //
