@@ -163,7 +163,7 @@ function moveSnowflakes() {
 	    resetPosition = false;
     }
     
-    /*requestAnimationFrame(moveSnowflakes);*/
+    requestAnimationFrame(moveSnowflakes); //Remove the commentation on code that is on this line. It is used to make the smow move
 }
 
 //
