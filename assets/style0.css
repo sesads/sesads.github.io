@@ -222,10 +222,13 @@ div.featurette-divider {
     margin: 0;
 }
 img.small-icon {
-    widows: 20px !important; height: 20px !important;
+    width: 20px !important; height: 20px !important;
 }
 img.small-icon-white {
     width:20px; height: 20px; filter: invert(100%);
+}
+img.ses-small-icon {
+    width: 80px !important; height: 80px !important;
 }
 
 /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
