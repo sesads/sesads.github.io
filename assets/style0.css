@@ -41,7 +41,9 @@ section h2{
 }
 #mainNav{
     border-color:rgba(34,34,34,.05);
-    background-color:rgba(255,255,255,.3);
+    background:linear-gradient(to left,#222,#255);
+    background:-webkit-linear-gradient(to left,#222,#255);
+    /*background-color: #255;*//*rgba(255,255,255,.3);*/
     -webkit-transition:all .35s;
     -moz-transition:all .35s;
     transition:all .35s;
@@ -69,35 +71,37 @@ section h2{
     font-family:Lato,Helvetica,Arial,sans-serif;
     letter-spacing:2px;
     text-transform:uppercase;
+    color: #fff;
 }
-#mainNav .navbar-nav>li>a.active{
+/*#mainNav .navbar-nav>li>a.active{
     color:red!important;
     background-color:transparent
-}
-#mainNav .navbar-nav>li>a.active:hover{
+}*/
+/*#mainNav .navbar-nav>li>a.active:hover{
     background-color:transparent
-}
+}*/
 #mainNav .navbar-nav>li>a,#mainNav .navbar-nav>li>a:focus{
-    color:#222;
+    color:#fff;
 }
 #mainNav .navbar-nav>li>a:focus:hover,
 #mainNav .navbar-nav>li>a:hover{
-    color:green /*#eb7589*/;
+    color:#eb7589 /*#eb7589*/;
 }
 .nav-link {
     color: #fff;
 }
 @media (min-width:992px){
     #mainNav{
+        color: #fff;
         border-color:transparent;
         background-color:transparent;
     }
     #mainNav .navbar-brand{
-        color:fade(white,70%);
+        color: fade(white,70%);
     }
     #mainNav .navbar-brand:focus,
     #mainNav .navbar-brand:hover{
-        color:#fff}
+        color:#eb7589}
     #mainNav .navbar-nav>li>a,
     #mainNav .navbar-nav>li>a:focus{
         color: rgba(255,255,255,.7)
@@ -107,12 +111,15 @@ section h2{
         color:pink}
     #mainNav.navbar-shrink{
         border-color:rgba(34,34,34,.1);
-        background-color:rgba(255,255,255,.7);
+        /*background-color: #255;*//*rgb(255,255,255,.7);*/
+        background:linear-gradient(to left,#222,#255);
+        background:-webkit-linear-gradient(to left,#222,#255);
+        color: #fff;
     }
-    #mainNav.navbar-shrink .navbar-brand{color:#222}
+    #mainNav.navbar-shrink .navbar-brand{color:#fff}
     #mainNav.navbar-shrink .navbar-brand:focus,
-    #mainNav.navbar-shrink .navbar-brand:hover{color:green}#mainNav.navbar-shrink .navbar-nav>li>a,#mainNav.navbar-shrink .navbar-nav>li>a:focus{color:#222}
-    #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover,#mainNav.navbar-shrink .navbar-nav>li>a:hover{color:red}}
+    #mainNav.navbar-shrink .navbar-brand:hover{color:#eb7589}#mainNav.navbar-shrink .navbar-nav>li>a,#mainNav.navbar-shrink .navbar-nav>li>a:focus{color:#fff}
+    #mainNav.navbar-shrink .navbar-nav>li>a:focus:hover,#mainNav.navbar-shrink .navbar-nav>li>a:hover{color: #fff}}
     header.masthead{position:relative;width:100%;padding-top:150px;padding-bottom:100px;color:#fff;background:url(../img/bg-pattern.png),#524397;background:url(../img/bg-pattern.png),-webkit-linear-gradient(to left,#222,#255);
         background:url(../img/bg-pattern.png),linear-gradient(to left,#222,#255)}
     header.masthead .header-content{max-width:500px;margin-bottom:100px;text-align:center}
