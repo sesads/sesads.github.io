@@ -99,7 +99,31 @@
 									<input type="file" class="common-textarea form-control" id="file-input" name="files[]" multiple="multiple">
 								</div>
 								<div class="mt-10">
-									<input required type="text" name="email" placeholder="Enter Your E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Your E-mail'" class="single-input single-input-primary">
+									<input required type="email" name="_replyto" placeholder="Enter Your E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Your E-mail'" class="single-input single-input-primary">
+									<input hidden type="hidden" name="_subject" value="[Sesads] New Advert Application!!" class="single-input single-input-primary">
+									<input hidden type="hidden" name="_next" value="#thank-you-modal" data-toggle="modal" data-target="#thank-you-modal" class="single-input single-input-primary">
+								</div>
+                            	<div id="thank-you-modal" class="modal fade" role="dialog">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<!-- Header -->
+											<div class="modal-header">
+												<h2 class="modal-title">Thank you.</h2>
+												<button type="button" class="close" data-dismiss="modal">×</button>
+											</div>
+											<!-- Body -->
+												<div class ="alert alert-success alert-dismissible"><h5>Alert Message!! </h5> 
+													<button type = "button" class="close" data-dismiss = "alert">x</button>
+													<h7>  Advert Details Submitted Successfully </h7>
+													<h3>  <a href="index.html">Tap here</a> to go back </h3>
+												</div>
+											<!-- Footer -->
+											<div class="modal-footer">
+												<button type="button" class="btn btn-default"
+												data-dismiss="modal">Close</button>
+											</div>
+										</div>
+									</div>
 								</div>
 								<div class="mt-10">
 									<input required type="text" name="phoneNumber" placeholder="Enter Your Phone Number" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Your Phone Number'" class="single-input single-input-primary" onkeypress="return !(event.charCode > 31 && (event.charCode < 48 || event.charCode > 57))">
