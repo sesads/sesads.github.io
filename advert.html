@@ -243,11 +243,11 @@
 		document.querySelector('.file-submit').addEventListener('click', handleFileUploadSubmit);
 
 		let selectedFile;
-		handleFileUploadChange(e); {
+		handleFileUploadChange(e) {
 			selectedFile = e.target.files[0];
 			}
 		
-		handleFileUploadSubmit(e);{
+		handleFileUploadSubmit(e) {
 			
 			const uploadTask = storageRef.child(`images/${selectedFile.name}`).put(selectedFile); 
 			//create a child directory called images, and place the file inside this directory
