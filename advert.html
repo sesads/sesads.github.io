@@ -96,7 +96,7 @@
 								</div>
 								<div class="input-group-icon mt-10 form-group">
 									<span>Send us your advert pictures (Only five[5] will be used)</span>
-									<input type="file" class="common-textarea form-control" id="file-input" name="files[]" multiple="multiple">
+									<input type="file" class="common-textarea form-control" accept="image/*" multiple="multiple">
 								</div>
 								<div class="mt-10">
 									<input required type="email" name="_replyto" placeholder="Enter Your E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Your E-mail'" class="single-input single-input-primary">
@@ -220,6 +220,27 @@
 
         <!-- Plugin JavaScript -->
         <script src="assets/plugin.js"></script>
+
+		<!--firebase Inclusion (for accepting photos)-->
+		<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
+		<script>
+		// Initialize Firebase
+		var config = {
+			apiKey: "AIzaSyA8fspLXFbwbpfsSQdIoXyTaX389QP-H78",
+			authDomain: "sesads-971fd.firebaseapp.com",
+			databaseURL: "https://sesads-971fd.firebaseio.com",
+			projectId: "sesads-971fd",
+			storageBucket: "sesads-971fd.appspot.com",
+			messagingSenderId: "34410014992"
+		};
+		firebase.initializeApp(config);
+
+		// not here by default
+		const storageService = firebase.storage();
+		const storageRef = storageService.ref();
+		
+		</script>
+		<!------------------';l';l';l'l';l'l'-->
 
         <!-- Custom JavaScript -->
         <script type="text/javascript" src="swipe.js"></script>
