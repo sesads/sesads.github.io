@@ -96,7 +96,7 @@
 								</div>
 								<div class="input-group-icon mt-10 form-group">
 									<span>Send us your advert pictures (Only five[5] will be used)</span>
-									<input type="file" class="common-textarea form-control" accept="image/*" multiple="multiple">
+									<input type="file" class="file-select common-textarea form-control" accept="image/*" multiple="multiple">
 								</div>
 								<div class="mt-10">
 									<input required type="email" name="_replyto" placeholder="Enter Your E-mail" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Your E-mail'" class="single-input single-input-primary">
@@ -141,7 +141,7 @@
 									<input name="otherContactInfo" placeholder="Other contact info (if any)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Other contact info(optional)'" class="common-input mb-20 form-control" type="text">
 								</div>
 								<div class="mt-10">
-									<button type="submit" class="btn btn-outline btn-xl js-scroll-trigger" style="background-color:#255; float:right" name="submit-advert-form">Submit</button>
+									<button type="submit" class="file-submit btn btn-outline btn-xl js-scroll-trigger" style="background-color:#255; float:right" name="submit-advert-form">Submit</button>
 								</div>
 							</form>
 						</div>
@@ -238,9 +238,33 @@
 		// not here by default
 		const storageService = firebase.storage();
 		const storageRef = storageService.ref();
+
+		document.querySelector('.file-select').addEventListener('change', handleFileUploadChange);
+		document.querySelector('.file-submit').addEventListener('click', handleFileUploadSubmit);
+
+		let selectedFile;
+		handleFileUploadChange(e); {
+			selectedFile = e.target.files[0];
+			}
+		
+		handleFileUploadSubmit(e);{
+			
+			const uploadTask = storageRef.child(`images/${selectedFile.name}`).put(selectedFile); 
+			//create a child directory called images, and place the file inside this directory
+
+			uploadTask.on('state_changed', (snapshot) => {
+			// Observe state change events such as progress, pause, and resume
+			}, (error) => {
+				// Handle unsuccessful uploads
+				console.log(error);
+			}, () => {
+				// Do something once upload is complete
+				   console.log('success');
+			});
+		}
 		
 		</script>
-		<!------------------';l';l';l'l';l'l'-->
+		<!--###########################################-->
 
         <!-- Custom JavaScript -->
         <script type="text/javascript" src="swipe.js"></script>
