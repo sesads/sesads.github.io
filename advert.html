@@ -84,7 +84,7 @@
 					<div class="row justify-content-center align-items-center">
 						<div class="col-lg-8 col-md-12 home-about-left">
 							<!--<form action="<?php echo $currentfile?>" method="post" enctype="multipart/form-data" name="AdvertUpload">-->
-							<form id="file-catcher" action="https://formspree.io/sesadserver@gmail.com" method="post" enctype="multipart/form-data" name="AdvertUpload">
+							<form id="filesubmit" action="https://formspree.io/sesadserver@gmail.com" method="post" enctype="multipart/form-data">
 								<div class="mt-10">
 									<input required type="text" name="name" placeholder="Enter Your Fullname Here" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Enter Your Fullame Here'" class="single-input single-input-primary">
 								</div>
@@ -119,7 +119,7 @@
 									<input name="otherContactInfo" placeholder="Other contact info (if any)" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Other contact info(optional)'" class="common-input mb-20 form-control" type="text">
 								</div>
 								<div class="mt-10">
-									<button type="submit" class="file-submit btn btn-outline btn-xl js-scroll-trigger" style="background-color:#255; float:right" name="submit-advert-form">Submit</button>
+									<button type="submit" class="file-submit btn btn-outline btn-xl js-scroll-trigger" style="background-color:#255; float:right">Submit</button>
 								</div>
 							</form>
 						</div>
@@ -196,9 +196,6 @@
         <script src="assets/jquery.js"></script>
         <script src="assets/bootstrap.js"></script>
 
-        <!-- Plugin JavaScript -->
-        <script src="assets/plugin.js"></script>
-
 		<!--firebase Inclusion (for accepting photos)-->
 		<script src="https://www.gstatic.com/firebasejs/5.7.3/firebase.js"></script>
 		<script>
@@ -235,14 +232,25 @@
 			}, (error) => {
 				// Handle unsuccessful uploads
 				console.log(error);
+				<div class ="alert alert-danger alert-dismissible"><h5>Alert Message!! </h5> 
+					<button type = "button" class="close" data-dismiss = "alert">x</button>
+					<h7>  Picth Upload Failed To Submit </h7>
+				</div>
 			}, () => {
 				// Do something once upload is complete
 				   console.log('success');
+				   <div class ="alert alert-success alert-dismissible"><h5>Notificattion!! </h5> 
+						<button type = "button" class="close" data-dismiss = "alert">x</button>
+						<h7>  Photos Uploaded Successfully </h7>
+					</div>
 			});
 		}
 		
 		</script>
 		<!--###########################################-->
+
+		<!-- Plugin JavaScript -->
+        <script src="assets/plugin.js"></script>
 
         <!-- Custom JavaScript -->
         <script type="text/javascript" src="swipe.js"></script>
